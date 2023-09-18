@@ -24,7 +24,7 @@ const Story = mongoose.model("Story", storySchema);
 
 // Simulated Database
 let stories = [];
-const apiKey = "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";
+const apiKey = "YOUR_API_KEY";
 
 // Middleware to allow cross-origin requests (for development purposes)
 app.use((req, res, next) => {
