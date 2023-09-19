@@ -3,6 +3,8 @@ import StoryForm from "./components/StoryForm";
 import GeneratedStory from "./components/GeneratedStory";
 import Leaderboard from "./components/Leaderboard";
 import axios from "axios";
+import "./App.css";
+import "./styles.css";
 
 function App() {
   const [generatedStory, setGeneratedStory] = useState(null);
@@ -50,7 +52,13 @@ function App() {
     <div className="app">
       <h1>Story Generator</h1>
       <StoryForm onGenerateStory={handleGenerateStory} />
-      {generatedStory && <GeneratedStory story={generatedStory} prompt={generatedPrompt} onUpvote={handleUpvote} />}
+      {generatedStory && (
+        <GeneratedStory
+          story={generatedStory}
+          prompt={generatedPrompt}
+          onUpvote={handleUpvote}
+        />
+      )}
       <Leaderboard />
     </div>
   );

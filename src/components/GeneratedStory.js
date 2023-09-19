@@ -1,8 +1,11 @@
 import React, { useContext } from "react";
 import axios from "axios";
 import { StoryContext } from "./StoryContext";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faSave } from "@fortawesome/free-solid-svg-icons";
 
-function GeneratedStory({ story, prompt, id, onUpvote }) {
+function GeneratedStory({ story, prompt }) {
   const { setLeaderboardData } = useContext(StoryContext);
   const handleSave = () => {
     axios
@@ -33,10 +36,20 @@ function GeneratedStory({ story, prompt, id, onUpvote }) {
   return (
     <div className="generated-story">
       <h2>Generated Story</h2>
-      <p>{story}</p>
-      <div className="actions">
-        <button onClick={handleSave}>Save</button>
-        <button onClick={handleWhatsAppShare}>Share on WhatsApp</button>
+      <div className="container">
+        <p>{story}</p>
+      </div>
+      <div className="button-container">
+        <div className="actions">
+          <button className="save-btn" onClick={handleSave}>
+            <FontAwesomeIcon icon={faSave} style={{ marginRight: "5px" }} />
+            Save
+          </button>
+          <button className="share-btn" onClick={handleWhatsAppShare}>
+            <FontAwesomeIcon icon={faWhatsapp} style={{ marginRight: "5px" }} />
+            Share on WhatsApp
+          </button>
+        </div>
       </div>
     </div>
   );

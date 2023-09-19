@@ -1,0 +1,195 @@
+body {
+  background: linear-gradient(
+    236deg,
+    rgb(170, 0, 255) 0%,
+    rgb(0, 85, 255) 100%
+  );
+  opacity: 1;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  -webkit-text-fill-color: aliceblue;
+  font-family: "GT Walsheim Bold", sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -2.4px;
+  line-height: 1em;
+  letter-spacing: 0px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+h2 {
+  text-align: center;
+  -webkit-text-fill-color: aliceblue;
+  font-family: "GT Walsheim Bold", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -2.4px;
+  line-height: 1em;
+  letter-spacing: 0px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.input-prompt {
+  height: 50px;
+  width: 100%;
+  padding-right: 20px;
+  font-family: "GT Walsheim Medium";
+  outline: 0px;
+  border: none;
+  background: white;
+  pointer-events: all;
+  box-shadow: none;
+  padding-left: 45px;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+.storygen {
+  background: linear-gradient(
+    270deg,
+    rgb(153, 102, 255) 0%,
+    rgb(0, 204, 255) 100%
+  );
+  border-radius: 25px;
+  border: none;
+  width: 30%;
+  height: 40px;
+}
+
+.genbtn {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  font-family: "GT Walsheim Bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: aliceblue;
+  font-size: 16px;
+  letter-spacing: 0;
+  text-transform: none;
+  text-decoration: none;
+  line-height: 1.2em;
+  text-align: start;
+  margin: auto;
+}
+
+.prompt-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: white;
+  width: 40%;
+  height: 30px;
+  padding: 16px;
+  margin: auto;
+  border-radius: 25px;
+}
+
+.save-btn {
+  background: linear-gradient(
+    270deg,
+    rgb(153, 102, 255) 0%,
+    rgb(0, 204, 255) 100%
+  );
+  border-radius: 25px;
+  border: none;
+  width: 80px;
+  height: 40px;
+  font-family: "GT Walsheim Medium"; /* Change the font family */
+  font-size: 16px; /* Change the font size */
+  font-weight: bold; /* Make the font bold */
+  color: aliceblue; /* Change the font color */
+  margin-right: 10px;
+}
+
+.share-btn {
+  background: linear-gradient(
+    270deg,
+    rgb(153, 102, 255) 0%,
+    rgb(0, 204, 255) 100%
+  );
+  border-radius: 25px;
+  border: none;
+  width: 200px;
+  height: 40px;
+  font-family: "GT Walsheim Medium"; /* Change the font family */
+  font-size: 16px; /* Change the font size */
+  font-weight: bold; /* Make the font bold */
+  color: aliceblue; /* Change the font color */
+}
+
+.upvote {
+  background: linear-gradient(
+    270deg,
+    rgb(153, 102, 255) 0%,
+    rgb(0, 204, 255) 100%
+  );
+  border-radius: 25px;
+  border: none;
+  width: 80px;
+  height: 40px;
+  font-family: "GT Walsheim Medium"; /* Change the font family */
+  font-size: 16px; /* Change the font size */
+  font-weight: bold; /* Make the font bold */
+  color: aliceblue; /* Change the font color */
+}
+
+.save-btn:hover,
+.share-btn:hover,
+.upvote:hover,
+.storygen {
+  cursor: pointer;
+}
+
+.heading {
+  font-style: normal;
+  font-family: "GT Walsheim Medium", sans-serif;
+  color: aliceblue;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+}
+
+.container {
+  background: white;
+  width: 60%;
+  height: auto;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+}
+p {
+  display: flex;
+  margin: 15px;
+  text-align: justify;
+}
+.leaderboard ul {
+  list-style-type: none;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .prompt-bar {
+    width: 60%;
+  }
+}
