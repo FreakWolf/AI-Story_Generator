@@ -12,7 +12,7 @@ function App() {
   const handleUpvote = (id) => {
     axios
       .post(
-        "https://ai-story-generator-freakwolf.netlify.app/upvote-story",
+        "http://localhost:5000/upvote-story",
         { storyId: id },
         {
           headers: {
@@ -31,7 +31,7 @@ function App() {
   const handleGenerateStory = (prompt) => {
     axios
       .post(
-        "https://ai-story-generator-freakwolf.netlify.app/generate-story",
+        "http://localhost:5000/generate-story",
         { prompt },
         {
           headers: {

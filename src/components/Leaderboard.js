@@ -10,7 +10,7 @@ function Leaderboard() {
 
   useEffect(() => {
     axios
-      .get("https://ai-story-generator-freakwolf.netlify.app/leaderboard")
+      .get("http://localhost:5000/leaderboard")
       .then((response) => {
         setLeaderboardData(response.data);
       })
@@ -21,7 +21,7 @@ function Leaderboard() {
 
   const handleUpvote = (storyId) => {
     axios
-      .post("https://ai-story-generator-freakwolf.netlify.app/upvote-story", { storyId })
+      .post("http://localhost:5000/upvote-story", { storyId })
       .then((response) => {
         setLeaderboardData((prevData) =>
           prevData.map((story) =>
