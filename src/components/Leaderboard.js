@@ -60,9 +60,11 @@ function Leaderboard() {
                 <strong>Story:</strong> {story.story}
               </p>
             </div>
-            <p className="heading">
-              <strong>Likes:</strong> {story.upvotes}
-            </p>
+            {story.upvotes && (
+              <p className="heading">
+                <strong>Likes:</strong> {story.upvotes}
+              </p>
+            )}
             <div className="button-container">
               <button
                 className="upvote"

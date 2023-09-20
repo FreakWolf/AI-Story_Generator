@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Connect to MongoDB
-mongoose.connect("mongodb://localhost:27017/storyDB", {
+mongoose.connect("mongodb+srv://rohitskt115:Rohit$kt906@cluster0.7ib4sgw.mongodb.net/?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -24,7 +24,7 @@ const Story = mongoose.model("Story", storySchema);
 
 // Simulated Database
 let stories = [];
-const apiKey = "YOUR_API_KEY";
+const apiKey = "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";
 
 // Middleware to allow cross-origin requests (for development purposes)
 app.use((req, res, next) => {
@@ -87,8 +87,6 @@ app.post("/generate-story", async (req, res) => {
         },
       }
     );
-
-    console.log("OpenAI API Response:", response.data);
 
     if (response.status !== 200) {
       throw new Error(`HTTP error! status: ${response.status}`);
