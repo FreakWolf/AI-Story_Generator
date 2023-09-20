@@ -9,7 +9,7 @@ function GeneratedStory({ story, prompt }) {
   const { setLeaderboardData } = useContext(StoryContext);
   const handleSave = () => {
     axios
-      .post("http://localhost:5000/save-story", { prompt, story, upvotes: 0 })
+      .post("https://ai-story-generator-freakwolf.netlify.app/save-story", { prompt, story, upvotes: 0 })
       .then((response) => {
         console.log("Story saved successfully:", response.data);
         setLeaderboardData((prevData) => [
